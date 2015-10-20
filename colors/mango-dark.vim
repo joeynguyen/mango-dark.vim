@@ -5,10 +5,12 @@
 
 " mango-dark.vim {{{
   set t_Co=256
-  let g:colors_name = "mango-dark"
   set background=dark
   highlight clear
-  syntax reset
+  if exists("syntax_on")
+    syntax reset
+  endif
+  let g:colors_name = 'mango-dark'
 " }}}
 
 " Colors: {{{
